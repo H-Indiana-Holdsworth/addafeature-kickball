@@ -120,6 +120,30 @@ exports[`should render a list of teams 1`] = `
           />
         </td>
       </tr>
+      <tr>
+        <td>
+          <a
+            href="/teams/5"
+          >
+            blobberes
+          </a>
+        </td>
+        <td>
+          <a
+            href="/teams/5"
+          >
+            <button
+              class="btn-view"
+              type="button"
+            >
+              View
+            </button>
+          </a>
+          <a
+            href="/teams/5/edit"
+          />
+        </td>
+      </tr>
     </tbody>
   </table>
 </div>
