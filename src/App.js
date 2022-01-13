@@ -36,7 +36,9 @@ function App() {
           path="/teams"
           render={(routeProps) => <Teams {...routeProps} user={currentUser} />}
         />
-        <ProtectedRoute user={currentUser} exact path="/teams/new" render={<AddTeam />} />
+        <ProtectedRoute currentUser={currentUser} exact path="/teams/new">
+          <AddTeam user={currentUser} />
+        </ProtectedRoute>
         <Route
           exact
           path="/teams/:id"
